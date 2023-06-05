@@ -1,20 +1,26 @@
 package practice;
 
-import java.util.Scanner;
-
 public class Practice {
 
 	public static void main(String[] args) {
-		 Scanner sc = new Scanner(System.in);
-	        // 5個のデータを入力する
-	        int x[]  = new int[5];
-	        for (int i = 0; i < 5; i++) {
-	            x[i]  = sc.nextInt();
-	        }
-	        // 逆順に出力
-	        for (int i = 4; i >= 0; i--) {
-	            System.out.print(x[i] + " ");
-	        }
+		 int[] array = new int[10];
+		 for (int i = 0; i < array.length; i++) {
+			 array[i] = i;
+		 }
+		 System.out.print("偶数：");
+		 for (int value : array) {
+			 if (value % 2 == 0) {
+				 System.out.print(value + " ");
+			 }
+		 }
+		 System.out.println(" ");
+		 
+		 System.out.print("奇数：");
+		 for (int value : array) {
+			 if (value % 2 == 1) {
+				 System.out.print(value + " ");
+			 }
+		 }
 	}
 
 }
