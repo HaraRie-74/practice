@@ -3,8 +3,13 @@ package practice;
 public class practice {
 
 	public static void main(String[] args) {
-		System.out.println("git hub接続確認");
-		System.out.println("確認");
+		int[] array = new int[10];
+		for (int i = 0; i < array.length; i++) {
+			array[i] = i;
+		}
+		for (int i = array.length - 1; i >= 0; i--) {
+			System.out.println(array[i]);
+		}
 	}
 
 }
