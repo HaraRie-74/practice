@@ -1,20 +1,18 @@
 package practice;
-import java.util.Arrays;
+
+//1〜10の数字の偶数のみを大きい順に上から縦に並ぶように表示させる
 
 public class Practice {
 
 	public static void main(String[] args) {
-		int[] array = new int[6];
-		for (int i = 0; i < array.length; i++) {
-			array[i] = (int)(Math.random() * 11);
+		int[] array = new int[10];
+		for (int i = 0; i < 10; i++) {
+			array[i] = i + 1;
 		}
-		System.out.println(Arrays.toString(array));
-		
-		Arrays.sort(array);
-		System.out.println(Arrays.toString(array));
-		
 		for (int i = array.length - 1; i >= 0; i--) {
-			System.out.println(array[i]);
+			if (array[i] % 2 == 0) {
+				System.out.println(array[i]);
+			}
 		}
 	}
 }
